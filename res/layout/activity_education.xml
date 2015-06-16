@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/types"
+    tools:context=".Education" >
+    
+    <TextView
+        android:id="@+id/education_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/education_text"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/Black" />
+    
+    <Button
+        android:id="@+id/learning_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/education_text"
+        android:onClick="goLearn"
+        android:text="@string/Learning" />
+    	
+    <Button
+        android:id="@+id/quiz_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/learning_button"
+        android:onClick="goQuiz"
+        android:text="@string/Quiz" />
+    
+</RelativeLayout>

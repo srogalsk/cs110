@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodtowine"
+    tools:context=".FoodtoWine" >
+
+    <Button
+        android:id="@+id/ButtonWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonRed"
+        android:layout_below="@+id/buttonRed"
+        android:layout_marginTop="30dp"
+        android:background="@color/Tan"
+        android:onClick="goWhite"
+        android:text="White."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="@color/Tan"
+        android:onClick="goRed"
+        android:text="Red."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/ButtonRemoveWish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonWhite"
+        android:layout_below="@+id/ButtonWhite"
+        android:layout_marginTop="35dp"
+        android:background="@color/Tan"
+        android:onClick="goOther"
+        android:text="Other."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+</RelativeLayout>

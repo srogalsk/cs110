@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodtowine"
+    tools:context=".FoodtoWine" >
+
+    <Button
+        android:id="@+id/buttonMeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/RelativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/Tan"
+        android:text="Meats."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" 
+        android:onClick="goMeat" />
+    <Button
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCheese"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:background="@color/Tan"
+        android:onClick="goPasta"
+        android:text="Pasta."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonVeggie"
+        android:layout_alignLeft="@+id/buttonMeat"
+        android:layout_marginBottom="28dp"
+        android:background="@color/Tan"
+        android:onClick="goCheese"
+        android:text="Cheese."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonVeggie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp"
+        android:background="@color/Tan"
+        android:onClick="goVeggie"
+        android:text="Vegetables."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+</RelativeLayout>

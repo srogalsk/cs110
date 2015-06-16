@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/blank_blackboard"
+    tools:context=".TypesQuiz" >
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button3"
+        android:layout_alignBottom="@+id/Button3"
+        android:layout_toLeftOf="@+id/scoreDisplay"
+        android:minLines="3"
+        android:onClick="checkAnswer"
+        android:text="Meats"
+        android:textColor="@color/AntiqueWhite"
+        android:width="120dp" />
+
+    <TextView
+        android:id="@+id/wineDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button1"
+        android:layout_alignRight="@+id/scoreDisplay"
+        android:layout_marginBottom="32dp"
+        android:background="@color/DarkSlateGray"
+        android:text="Wine"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/AntiqueWhite" />
+
+    <TextView
+        android:id="@+id/scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Score: 0"
+        android:textColor="@color/White" />
+
+    <TextView
+        android:id="@+id/questionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Question: 1/10"
+        android:textColor="@color/White" />
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/Button1"
+        android:layout_below="@+id/Button3"
+        android:minLines="3"
+        android:onClick="checkAnswer"
+        android:text="Pasta"
+        android:textColor="@color/AntiqueWhite"
+        android:width="120dp" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Button2"
+        android:layout_marginBottom="51dp"
+        android:layout_toRightOf="@+id/wineDisplay"
+        android:minLines="3"
+        android:onClick="checkAnswer"
+        android:text="Cheese"
+        android:textColor="@color/AntiqueWhite"
+        android:width="120dp" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scoreDisplay"
+        android:layout_alignLeft="@+id/Button3"
+        android:layout_marginBottom="38dp"
+        android:minLines="3"
+        android:onClick="checkAnswer"
+        android:text="Vegetables"
+        android:textColor="@color/AntiqueWhite"
+        android:width="120dp" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/math_blackboard"
+    tools:context=".Quiz" >
+
+    <Button
+        android:id="@+id/etiquetteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/regionsButton"
+        android:layout_alignLeft="@+id/regionsButton"
+        android:onClick="goEtiquetteQuiz"
+        android:text="@string/Etiquette"
+        android:textColor="@color/AntiqueWhite" />
+
+    <Button
+        android:id="@+id/regionsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/typesButton"
+        android:layout_alignLeft="@+id/typesButton"
+        android:onClick="goRegionsQuiz"
+        android:text="@string/Regions"
+        android:textColor="@color/AntiqueWhite" />
+
+    <Button
+        android:id="@+id/typesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/productionButton"
+        android:layout_alignLeft="@+id/productionButton"
+        android:onClick="goTypesQuiz"
+        android:text="@string/Types"
+        android:textColor="@color/AntiqueWhite" />
+
+    <Button
+        android:id="@+id/historyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:onClick="goHistoryQuiz"
+        android:text="@string/history"
+        android:textColor="@color/AntiqueWhite" />
+
+    <Button
+        android:id="@+id/pairingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/historyButton"
+        android:layout_alignLeft="@+id/historyButton"
+        android:onClick="goFoodPairingsQuiz"
+        android:text="@string/pairings"
+        android:textColor="@color/AntiqueWhite" />
+
+    <Button
+        android:id="@+id/productionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pairingsButton"
+        android:layout_alignLeft="@+id/pairingsButton"
+        android:onClick="goProductionQuiz"
+        android:text="@string/Production"
+        android:textColor="@color/AntiqueWhite" />
+
+</RelativeLayout>

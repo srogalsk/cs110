@@ -1,0 +1,143 @@
+<!-- TODO Write all strings into strings.xml for better MVC? -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/glasses"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BAC" >
+
+    
+    
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wine Name:" />
+
+    <EditText
+        android:id="@+id/wine_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nametext"
+        android:layout_below="@+id/nametext"
+        android:ems="20"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/colortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wine_name"
+        android:layout_below="@+id/wine_name"
+        android:text="Wine Color:" />
+<RadioGroup
+        android:id="@+id/genderChooser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/colortext"
+        android:layout_below="@+id/colortext"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+    <RadioButton
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red" />
+    <RadioButton
+        android:id="@+id/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White" />
+    <RadioButton
+        android:id="@+id/rose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rose" />
+  </RadioGroup>
+
+
+
+
+    <TextView
+        android:id="@+id/regiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nametext"
+        android:layout_below="@+id/genderChooser"
+        android:layout_marginTop="10dp"
+        android:text="Region wine is from:" />
+
+    <EditText
+        android:id="@+id/wineregion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regiontext"
+        android:layout_below="@+id/regiontext"
+        android:ems="20"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/dsctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/winedsc"
+  		android:layout_alignTop="@+id/winedsc"
+        android:layout_marginTop="-20dp"
+        android:text="Wine Description:" />
+
+    <EditText
+        android:id="@+id/winedsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+        android:enabled="true"
+        android:includeFontPadding="false"
+        android:inputType="textMultiLine"
+        android:maxHeight="@android:dimen/notification_large_icon_height"
+        android:maxLines="5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:selectAllOnFocus="false"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textColorHint="@color/Black"
+        android:textColorLink="@color/Black"
+        android:typeface="normal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/add_wine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wine_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="addWine"
+        android:text="Add Wine!" />
+
+    <CheckBox
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/add_wine"
+        android:layout_alignParentBottom="true"
+        android:text="Add to Favorite" />
+
+    <CheckBox
+        android:id="@+id/wishlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/favorite"
+        android:layout_alignLeft="@+id/favorite"
+        android:text="Add to Wishlist" />
+
+</RelativeLayout>

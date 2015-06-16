@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/blank_blackboard"
+    tools:context=".TypesQuiz" >
+
+    <TextView
+        android:id="@+id/scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:textColor="@color/AntiqueWhite"
+        android:text="Score: 0" />
+
+    <TextView
+        android:id="@+id/wineDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/whiteButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:textColor="@color/AntiqueWhite"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/questionDisplay"
+        android:onClick="checkAnswer"
+        android:textColor="@color/AntiqueWhite"
+        android:text="Red" />
+
+    <Button
+        android:id="@+id/whiteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/questionDisplay"
+        android:onClick="checkAnswer"
+        android:textColor="@color/AntiqueWhite"
+        android:text="White" />
+
+    <TextView
+        android:id="@+id/questionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wineDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:textColor="@color/AntiqueWhite"
+        android:text="Question: 1/10" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegionsLearn" >
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="0dp"
+        android:layout_height="0dp" 
+        android:layout_above="@+id/regionsinfo" />
+
+    <Button
+        android:id="@+id/regions_url_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_above="@+id/regions_quiz_button"
+        android:onClick="loadUrl"
+        android:text="@string/button_more_information" />
+
+    <Button
+        android:id="@+id/regions_quiz_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_above="@+id/regions_education_button"
+        android:onClick="goToQuiz"
+        android:text="@string/button_quiz" />
+
+    <Button
+        android:id="@+id/regions_education_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:onClick="goToEducation"
+        android:text="@string/button_education" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/regions_url_button">
+    
+    	<TextView
+    	    android:id="@+id/regionsinfo"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:hint="@string/regions_info" >
+
+        	<requestFocus />
+    	</TextView>
+    
+    </ScrollView>
+
+</RelativeLayout>

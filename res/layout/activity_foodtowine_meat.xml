@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodtowine"
+    tools:context=".FoodtoWine" >
+
+    <Button
+        android:id="@+id/buttonCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonMeat"
+        android:layout_below="@+id/buttonMeat"
+        android:layout_marginTop="21dp"
+        android:background="@color/Tan"
+        android:onClick="pickChicken"
+        android:text="Chicken"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCheese"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:background="@color/Tan"
+        android:onClick="pickPork"
+        android:text="Pork"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonMeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/RelativeLayout1"
+        android:background="@color/Tan"
+        android:onClick="pickBeef"
+        android:text="Beef"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/ButtonFish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCheese"
+        android:layout_alignBottom="@+id/buttonCheese"
+        android:layout_alignRight="@+id/RelativeLayout1"
+        android:background="@color/Tan"
+        android:onClick="pickFish"
+        android:text="Fish"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/Meat"
+        android:cursorVisible="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCheese"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:background="@color/Tan"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:focusable="false"
+        android:typeface="serif" />
+
+</RelativeLayout>

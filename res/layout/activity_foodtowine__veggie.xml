@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodtowine"
+    tools:context=".FoodtoWine" >
+
+    <EditText
+        android:id="@+id/Veggie"
+        android:cursorVisible="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:background="@color/Tan"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" 
+        android:focusable="false">
+    </EditText>
+
+    <Button
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@color/Tan"
+        android:onClick="pickGreen"
+        android:text="Green Veggies."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonMeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@color/Tan"
+        android:onClick="pickMush"
+        android:text="Mushroom/Potatoes."
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+</RelativeLayout>

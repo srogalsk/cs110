@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cs110"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.cs110.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.cs110.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.controller.BAC"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.BACFinal"
+            android:label="@string/title_activity_bacfinal" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.controller.Tools"
+            android:label="@string/title_activity_tools" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.Pairings"
+            android:label="@string/title_activity_pairings" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.controller.Locations"
+            android:label="@string/title_activity_locations" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.Education"
+            android:label="@string/title_activity_education" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.SampleActivity"
+            android:label="@string/title_activity_sample" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.WineLibrariesActivity"
+            android:label="@string/title_activity_wine_libraries" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.DigitalCellarActivity"
+            android:label="@string/title_activity_digital_cellar" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.FavoritesActivity"
+            android:label="@string/title_activity_favorites" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.WishlistActivity"
+            android:label="@string/title_activity_wishlist" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.SearchWinesActivity"
+            android:label="@string/title_activity_search_wines" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.FoodtowineMeat"
+            android:label="@string/title_activity_foodtowine_meat"
+            android:parentActivityName="com.example.cs110.tools.pairing.controller.FoodtoWine" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cs110.FoodtoWine" />
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.FoodtoWine"
+            android:label="@string/title_activity_foodto_wine" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.FoodtowinePasta"
+            android:label="@string/title_activity_foodtowine_pasta"
+            android:parentActivityName="com.example.cs110.tools.pairing.controller.FoodtoWine" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cs110.pairing.FoodtoWine" />
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.Foodtowine_Veggie"
+            android:label="@string/title_activity_foodtowine__veggie" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.FoodtowineCheese"
+            android:label="@string/title_activity_foodtowine_cheese"
+            android:parentActivityName="com.example.cs110.tools.pairing.controller.FoodtowineMeat" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cs110.pairing.FoodtowineMeat" />
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.WinetoFood"
+            android:label="@string/title_activity_wineto_food" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.WinetofoodWhite"
+            android:label="@string/title_activity_winetofood_white" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.WinetofoodRed"
+            android:label="@string/title_activity_winetofood_red" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.pairing.controller.WinetofoodOther"
+            android:label="@string/title_activity_winetofood_other" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.TypesQuiz"
+            android:label="@string/title_activity_types_quiz1" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.QuizResult"
+            android:label="@string/title_activity_quiz_result1" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.DisplaySearch"
+            android:label="@string/title_activity_display_search" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.ViewWine"
+            android:label="@string/title_activity_view_wine" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.FoodPairingsQuiz"
+            android:label="@string/title_activity_food_pairings_quiz" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.ViewFavWine"
+            android:label="@string/title_activity_view_fav_wine" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.ViewWishWine"
+            android:label="@string/title_activity_view_wish_wine" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.Learn"
+            android:label="@string/title_activity_learn" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.EtiquetteLearn"
+            android:label="@string/title_activity_etiquette_learn" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.HistoryLearn"
+            android:label="@string/title_activity_history_learn" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.ProductionLearn"
+            android:label="@string/title_activity_production_learn" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.RegionsLearn"
+            android:label="@string/title_activity_regions_learn" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.TypesLearn"
+            android:label="@string/title_activity_types_learn" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.FoodPairingsLearn"
+            android:label="@string/title_activity_food_pairings_learn" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.Quiz"
+            android:label="@string/title_activity_quiz" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.RegionsQuiz"
+            android:label="@string/title_activity_regions_quiz" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.EtiquetteQuiz"
+            android:label="@string/title_activity_etiquette_quiz" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.library.controller.AddWine"
+            android:label="@string/title_activity_add_wine" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.HistoryQuiz"
+            android:label="@string/title_activity_history_quiz" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.education.controller.ProductionQuiz"
+            android:label="@string/title_activity_production_quiz" >
+        </activity>
+        <activity
+            android:name="com.example.cs110.tools.controller.UserStats"
+            android:label="@string/title_activity_user_stats" >
+        </activity>
+    </application>
+
+</manifest>

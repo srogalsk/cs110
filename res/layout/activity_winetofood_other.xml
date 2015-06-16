@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:screenOrientation="portrait"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/foodtowine"
+    tools:context=".FoodtoWine" >
+
+ 
+
+    <Button
+        android:id="@+id/buttonMerlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/Tan"
+        android:onClick="pickBlancdeNoir"
+        android:text="Blanc De Noir"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/ButtonCab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPinot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@color/Tan"
+        android:onClick="pickBlancdeBlanc"
+        android:text="Blanc de Blanc"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ButtonCab"
+        android:layout_alignRight="@+id/Other"
+        android:layout_marginRight="22dp"
+        android:background="@color/Tan"
+        android:onClick="pickBrut"
+        android:text="Brut"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/buttonPinot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Other"
+        android:layout_below="@+id/buttonMerlot"
+        android:layout_marginTop="30dp"
+        android:background="@color/Tan"
+        android:onClick="pickPink"
+        android:text="Pink Wines"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif" />
+   <EditText
+        android:id="@+id/Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
+        android:background="@color/Tan"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textColorLink="@color/maroon"
+        android:textStyle="italic"
+        android:typeface="serif"
+ android:focusable="false" >
+    </EditText>
+</RelativeLayout>
